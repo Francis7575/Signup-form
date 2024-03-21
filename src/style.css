@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url(./assets/bg-intro-mobile.png);
+    background-repeat: no-repeat;
+    background-color: #FF7979;
+}
+
+main {
+    padding: 5.5rem 1.5rem 4.25rem 1.5rem;
+}
+
+@media (min-width: 64em) {
+    body {
+        background-image: url(./assets/bg-intro-desktop.png);
+        background-repeat: no-repeat;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+}
