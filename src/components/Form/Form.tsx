@@ -21,7 +21,7 @@ const InputWithError: React.FC<{
     placeholder: string;
     error: Error | undefined;
     type: string;
-    onFocus: (fieldName: string) => void; 
+    onFocus: (fieldName: string) => void;
     fieldName: string;
 }> = ({ value, onChange, name, placeholder, error, type, onFocus, fieldName }) => {
     const [isFocused, setIsFocused] = useState<boolean>(false);
@@ -40,7 +40,7 @@ const InputWithError: React.FC<{
                 type={type}
                 name={name}
                 placeholder={placeholder}
-                className={`${styles.input} ${errorClassName}`}
+                className={`${styles.input} ${errorClassName} ${isFocused ? styles.focused : ''}`}
             />
             {error && error.fieldName === name && (
                 <div className={styles.errorContainer}>
