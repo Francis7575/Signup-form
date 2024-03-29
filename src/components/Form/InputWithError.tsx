@@ -1,6 +1,6 @@
 import { useState, ChangeEvent } from 'react';
-import styles from './InputWithError.module.css';
 import SvgContent from '../../assets/icon-error.svg';
+import styles from './Form.module.css'
 
 type Error = {
     message: string;
